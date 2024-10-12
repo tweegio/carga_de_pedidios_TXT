@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+a{
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 22px;
+    
+}
+
+a, .nav-link1{
+    margin-left: 20px;
+    
+    
+}
+
+a, .nav-link2{
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.order-summary {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.order-buttons {
+    display: flex;
+    
+    
+}
+
+.como-funciona{
+    font-size:25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Estilo para las imágenes posicionadas a los lados */
+.image-left, .image-right {
+    position: absolute;
+    top: 30%;/*Centraverticalmente*/
+    transform: translateY(-50%);/*Ajustaelcentradocorrectamente*/
+    width: 270px;/*Ajustaelancho*/
+
+}
+
+/* Imagen a la izquierda */
+.image-left {
+    left: 30px; /* Coloca la imagen a la izquierda del contenedor */
+}
+
+/* Imagen a la derecha */
+.image-right{
+    right: 30px; /* Coloca la imagen a la derecha del contenedor */
+}
+
+/*Diseño responsive en pantallas pequeñas */
+@media (max-width: 1024px) {
+    .image-left, .image-right {
+        display: none; /* Ocultar las imágenes en pantallas pequeñas */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Animación de las imágenes */
+.image-1 img,.image-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Comenzar con las imágenes invisibles */
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.3s; /* Retraso opcional para que no aparezcan inmediatamente */
+}
+
