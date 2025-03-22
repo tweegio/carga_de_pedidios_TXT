@@ -20,6 +20,44 @@ header {
     color: white;
 }
 
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para la etiqueta */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo moderno para el input */
+input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Cambio de color al pasar el mouse o al seleccionar */
+input[type="date"]:hover,
+input[type="date"]:focus {
+    border-color: #388E3C;
+    background-color: #f0f0f0;
+}
+
+/* Para navegadores que no soportan date */
+input[type="date"].no-support {
+    background-color: #fff;
+    cursor: text;
+}
 
 
 a{
