@@ -33,7 +33,7 @@ function agregarProducto() {
 function actualizarResumen() {
     let resumen = "";
     productos.forEach((producto, index) => {
-        resumen += `Producto ${index + 1}/: Entrega: ${producto.fecha} / Op: ${producto.orden}  / Cant: ${producto.cantidad} / medida:${producto.medida} / Color: ${producto.color}\n`;
+        resumen += `_Producto ${index + 1}/: Entrega: ${producto.fecha} / Op: ${producto.orden}  / Cant: ${producto.cantidad} / medida:${producto.medida} / Color: ${producto.color}\n`;
     });
     document.getElementById("resumenPedido").value = resumen;
 }
