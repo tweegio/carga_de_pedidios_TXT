@@ -12,175 +12,116 @@
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>PEDIDOS : TXT</title>
 </head>
 <body>
-   
     <header>
-        <h1>Pedidos de Bolsas Fantsia</h1>
+        <h1>Pedidos de Bolsas Fantasía</h1>
         <nav>
-            <a href="" clas="nav-link1">Inicio</a>
-            <a href="indicaciones de uso.html" clas="nav-link2">App</a>
+            <a href="" class="nav-link1">Inicio</a>
+            <a href="indicaciones_de_uso.html" class="nav-link2">App</a>
         </nav>
     </header>
- 
+</div>
+<div class="image-1">
+    <img src="logo_txt.png" alt="logo-empersa-1" class="image-left">
+    
+    
+</div>
+<div class="image-2">
+    <img src="logo_txt.png" alt="logo-empersa-1" class="image-right">
+</div>
+
+</div>
 
     <div class="container">
         <div class="form-container">
+            <div class="date-container">
+                <label for="fecha">Seleccione una fecha de entrega:</label>
+                <input type="date" id="fecha" name="date">
+            </div>
             <form action="https://formsubmit.co/expedicion@txtpack.com.ar" method="POST" autocomplete="off">
-            <label for="cliente">Nombre del Cliente:</label>
-            <input type="text" id="cliente" name="cliente" required>
+                <label for="cliente">Nombre del Cliente:</label>
+                <input type="text" id="cliente" name="cliente" required placeholder="Nombre del cliente">
+                
+                <label for="orden">N° Orden de Pedido:</label>
+                <input type="number" id="orden" name="orden" min="100" required placeholder="Ingrese número de OP">
+                
 
-            <div id="productos">
-                <div class="producto">
-                    <label for="cantidad">Cantidad de Bolsas:</label>
-                    <input type="number" name="cantidad" min="1" required>
-                    
-                   
-                    <label for="medida">Medidas de las Bolsas Lisas:</label>
+                <div id="productos">
                     <select name="medida" required>
                         <option value="">Modelo de Bolsa</option>
-                        <option value="30x40 cm">22.5x30 Riñon</option>
-                        <option value="40x50 cm">30x40 Riñon</option>
-                        <option value="40x50 cm">38x40 Riñon</option>
-                        <option value="50x60 cm">45x40 Riñon</option>
-                        <option value="30x40 cm">30x30 Manija</option>
-                        <option value="40x50 cm">38x40 Manija</option>
-                        <option value="50x60 cm">45x40 Manija</option>
-                        <option value="60x70 cm">50x60 Manija</option>
+                        <option value="22.5x30 cm">22.5x30 Riñon</option>
+                        <option value="30x30 cm">30x30 Riñon</option>
+                        <option value="30x40 cm">30x40 Riñon</option>
+                        <option value="38x40 cm">38x40 Riñon</option>
+                        <option value="45x40 cm">45x40 Riñon</option>
+                        <option value="30x30 cm">30x30 Manija</option>
+                        <option value="38x40 cm">38x40 Manija</option>
+                        <option value="45x40 cm">45x40 Manija</option>
+                        <option value="50x60 cm">50x60 Manija</option>
                         <option value="Great rosa">Great rosa</option>
-                        <option value="Gatitos">Gatitos</option>
-                        <option value="Rock Nacional">Rock Nacional</option>
-                        <option value="Maradona">Maradona</option>
-                        <option value="Cat">Cat</option>
-                        <option value="Gato Chino">Gato Chino</option>
-                        <option value="Mandala">Mandala</option>
-                        <option value="Vincent">Vincent</option>
-                        <option value="Gafas">Gafas</option>
-                        <option value="Fly">Fly</option>
-                        <option value="Guau Gnde">Guau Gnde</option>
-                        <option value="Positive">Positive</option>
-                        <option value="Navidad">Navidad</option>
-                        <option value="Año nuevo">Año nuevo</option>
-                        <option value="Pinoel">Pinoel</option>
-                        <option value="Personalizado">Personalizado</option>
+                        <option value="dis.Gatitos">Gatitos</option>
+                        <option value="dis.Rock Nacional">Rock Nacional</option>
+                        <option value="dis.Maradona">Maradona</option>
+                        <option value="dis.Cat">Cat</option>
+                        <option value="dis.Gato Chino">Gato Chino</option>
+                        <option value="dis.Mandala">Mandala</option>
+                        <option value="dis.Vincent">Vincent</option>
+                        <option value="dis.Gafas">Gafas</option>
+                        <option value="dis.Fly">Fly</option>
+                        <option value="dis.Guau Gnde">Guau Gnde</option>
+                        <option value="dis.Positive">Positive</option>
+                        <option value="dis.Navidad">Navidad</option>
+                        <option value="dis.Año nuevo">Año nuevo</option>
+                        <option value="dis.Pinoel">Pinoel</option>
                     </select>
                 </div>
+
                 <div>
-                    
                     <label for="color">Color de Bolsa:</label>
                     <select name="color" id="color" required>
-                    <option value="">Selecciona un color</option>
-                    <option value="Diseño">Diseño</option>
-                    <option value="Blanco">Blanco</option>
-                    <option value="Crudo">Crudo</option>
-                    <option value="Negro">Negro</option>
-                    <option value="Rojo">Rojo</option>
-                    <option value="Fucsia">Fucsia</option>
-                    <option value="Naranja">Naranja</option>
-                    <option value="Azul">A.Francia</option>
-                    <option value="Verde">V.Benetton</option>
-                    <option value="Amarillo">Amarillo</option>
+                        <option value="">Selecciona un color</option>
+                        <option value="Diseño">Diseño</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Crudo">Crudo</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Fucsia">Fucsia</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="Azul">A.Francia</option>
+                        <option value="Verde">V.Benetton</option>
+                        <option value="Amarillo">Amarillo</option>
                     </select>
-                </div>
-                <button type="button" onclick="agregarProducto()">Agregar Producto</button>
-                <label for="comentarios">Comentarios Adicionales:</label>
-                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Fecha de entrega y detalles adicionales del pedido..."></textarea>
-    
-                <div class="order-summary">
-                    <label for="resumenPedido">Resumen del Pedido:</label>
-                    <textarea id="resumenPedido" rows="40" readonly></textarea>
-                </div>
-                <div class="order-buttons">
-                    <button type="submit" value="enviar">Confirmar Pedido</button>
-                    <button type="button" onclick="borrarPedido()">Borrar Pedido</button>
+
+                    <div class="producto">
+                        <label for="cantidad">Cantidad de Bolsas:</label>
+                        <input type="number" name="cantidad" min="200" required placeholder="Minimo 200 unidades">
+                    </div>
+
+                    <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+                    <label for="comentarios">Comentarios Adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                    <div class="order-summary">
+                        <label for="resumenPedido">Resumen del Pedido:</label>
+                        <textarea id="resumenPedido" rows="10" readonly></textarea>
+                    </div>
+
+                    <div class="order-buttons">
+                        <button type="submit">Confirmar Pedido</button>
+                        <button type="button" onclick="borrarPedido()">Borrar Pedido</button>
+                    </div>
                 </div>
             </form>
-            </div>
-           
-
-            
-
-           
-
-       
-           
         </div>
-        <div class="image-1">
-            <img src="logo_txt.png" alt="logo-empersa-1" class="image-left">
-            
-            
-        </div>
-        <div class="image-2">
-            <img src="logo_txt.png" alt="logo-empersa-1" class="image-right">
-        </div>
-       
     </div>
-  
-   
 
     <footer>
-        <p>&copy; 2024 tweegio</p>
+        <p>&copy; 2024 Tweegio</p>
     </footer>
 
-    <script>
-        let productos = [];
-
-        function agregarProducto() {
-            const cantidad = document.querySelector('input[name="cantidad"]').value;
-            const medida = document.querySelector('select[name="medida"]').value;
-            const color = document.querySelector('select[name="color"]').value;
-
-
-            if (cantidad && medida && color) {
-                productos.push({ cantidad, medida, color });
-                actualizarResumen();
-            } else {
-                alert("Por favor, completa todos los campos del producto.");
-            }
-        }
-
-        function actualizarResumen() {
-            let resumen = "";
-            productos.forEach((producto, index) => {
-                resumen += `Producto ${index + 1}: ${producto.cantidad} / bolsas ${producto.medida}/ Color: ${producto.color}\n`;
-            });
-            document.getElementById("resumenPedido").value = resumen;
-        }
-
-        function confirmarPedido() {
-            const cliente = document.getElementById('cliente').value;
-            const email = document.getElementById('email').value;
-            const comentarios = document.getElementById('comentarios').value;
-
-            if (!cliente ||  productos.length === 0) {
-                alert("Por favor, completa los campos obligatorios.");
-                return;
-            }
-
-            let pedido = `Cliente: ${cliente}`;
-            productos.forEach((producto, index) => {
-                pedido += `Producto ${index + 1}: ${producto.cantidad} bolsas de ${producto.medida}\n`;
-            });
-            if (comentarios) {
-                pedido += `Comentarios: ${comentarios}`;
-            }
-            
-            alert("Tu pedido se envió correctamente!!!")
-
-        }
-
-        function borrarPedido() {
-            productos = [];
-            document.getElementById('cliente').value = '';
-            document.getElementById('comentarios').value = '';
-            document.getElementById('resumenPedido').value = '';
-            const inputs = document.querySelectorAll('input[name="cantidad"], select[name="medida"]');
-            inputs.forEach(input => input.value = '');
-            alert("Acabas de borrar el pedido!!!\n Debes empezar de cero =(")
-        }
-    </script>
-
-
+    <script src="script.js"></script>
+</body>
 </html>
